@@ -1,0 +1,15 @@
+   {
+      "version": 2,
+      "builds": [
+        {
+          "src": "server.js", // Or your main server file
+          "use": "@vercel/node"
+        }
+      ],
+      "routes": [
+        {
+          "src": "/(.*)",
+          "dest": "/server.js" // Redirects all traffic to your API entry point
+        }
+      ]
+    }
